@@ -1,0 +1,5 @@
+<launch>
+  <!-- Launch files for calibration of multispectral camera. -->
+  <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/>
+  <node name="calibrator" pkg="multispectral_processing" type="calibrator.py" output="screen"/>
+</launch>

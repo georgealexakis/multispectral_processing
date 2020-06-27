@@ -1,0 +1,7 @@
+<launch>
+  <!-- Launch files for camera configurator. -->
+  <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+  <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure"/>
+  <node name="camera_configurator" pkg="multispectral_processing" type="camera_configurator.py" output="screen"/>
+</launch>

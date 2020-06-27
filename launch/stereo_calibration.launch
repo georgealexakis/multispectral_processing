@@ -1,0 +1,11 @@
+<launch>
+  <!-- Launch files for stereo calibration of multispectral camera. -->
+  <rosparam file="$(find multispectral_processing)/resources/multispectral_camera.yaml"/>
+  <rosparam file="$(find multispectral_processing)/resources/parameters.yaml"/>
+  <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/>
+  <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/>
+  <node name="band_separator" pkg="multispectral_processing" type="band_separator.py" output="screen"/> 
+  <node name="synchronizer" pkg="multispectral_processing" type="synchronizer.py" output="screen"/>
+  <node name="stereo_calibrator" pkg="multispectral_processing" type="stereo_calibrator.py" output="screen"/>
+  <!-- <node name="experiments" pkg="multispectral_processing" type="experiments" args="5" output="screen"/> -->
+</launch>

@@ -1,0 +1,7 @@
+%YAML:1.0
+---
+whiteReferenceCoefficients: !!opencv-matrix
+   rows: 1
+   cols: 9
+   dt: d
+   data: [ 1., 1., 1., 1., 1., 1., 1., 1., 1. ]

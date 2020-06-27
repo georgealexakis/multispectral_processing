@@ -1,0 +1,12 @@
+<launch>
+  <!-- Multispectral image camera and kinect registration, via feature detection (C++). -->
+  <rosparam file="$(find multispectral_processing)/resources/multispectral_camera.yaml"/>
+  <rosparam file="$(find multispectral_processing)/resources/parameters.yaml"/>
+  <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/>
+  <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/>
+  <include file="$(find multispectral_processing)/launch/point_cloud_generator.launch"/>
+  <node name="band_separator" pkg="multispectral_processing" type="band_separator" args="nodebug" output="screen"/>
+  <node name="features_registrator" pkg="multispectral_processing" type="features_registrator" args="nocapture" output="screen"/>
+  <node name="tf_node" pkg="multispectral_processing" type="tf_node"/>
+  <node name="static_transform_publisher" pkg="tf" type="static_transform_publisher" args="0 0 0 -1.5707963267948966 0 -1.5707963267948966 camera_link kinect2_link 100"/>
+</launch>

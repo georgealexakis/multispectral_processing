@@ -1,0 +1,17 @@
+<launch>
+  <!-- Point cloud generator. More info: http://wiki.ros.org/depth_image_proc -->
+  <arg name="camera_info" value="/multispectral/camera_info"/>        <!-- Camera info -->
+  <arg name="image_color_rect" value="/multispectral/image_color"/>   <!-- Rectified color image -->
+  <arg name="image_depth_rect" value="/multispectral/image_depth"/>   <!-- Rectified depth image -->
+  <arg name="out_cloud" value="/multispectral/depth_registered/points"/>
+
+  <node pkg="nodelet" type="nodelet" name="standalone_nodelet" args="manager" output="screen"/>
+
+  <!-- Construct point cloud of the rgb and depth topics -->
+  <node pkg="nodelet" type="nodelet" name="points_xyzrgb" args="load depth_image_proc/point_cloud_xyzrgb standalone_nodelet --no-bond">
+    <remap from="rgb/camera_info" to="$(arg camera_info)" />  
+    <remap from="rgb/image_rect_color" to="$(arg image_color_rect)"/>  
+    <remap from="depth_registered/image_rect" to="$(arg image_depth_rect)"/>  
+    <remap from="depth_registered/points" to="$(arg out_cloud)"/>
+  </node>
+</launch>

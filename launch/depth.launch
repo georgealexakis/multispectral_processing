@@ -1,0 +1,20 @@
+<launch>
+    <arg name="cloud_input_ns" value="/some_namespace/cameras/" />
+    <arg name="upm_ns" value="/upm_perception"/>
+    <arg name="cam_info_subfolder" value="$(arg upm_ns)/cameras"/> 
+
+    <!-- Nodelet manager for this pipeline -->
+    <node pkg="nodelet" type="nodelet" args="manager" name="depth_transforms_manager" output="screen"/>
+
+    <!-- Convert to point cloud -->
+    <node pkg="nodelet" type="nodelet" name="cloudify" args="load depth_image_proc/point_cloud_xyzrgb depth_transforms_manager --no-bond">
+        <!-- Input: Rectified depth image, registered to the RGB camera. -->
+        <remap from="depth_registered/image_rect" to="$(arg cam_info_subfolder)/scene_depth_cam_wf"/> 
+        <!-- Input: Rectified color image. -->
+        <remap from="rgb/image_rect_color" to="$(arg cam_info_subfolder)/scene_rgb_cam_wf"/> 
+        <!-- Input: Camera calibration and metadata. --> 
+        <remap from="rgb/camera_info" to="$(arg cam_info_subfolder)/scene_depth_camera_info"/>
+        <!-- Output: XYZRGB point cloud. -->
+        <remap from="depth_registered/points" to="$(arg cam_info_subfolder)/points"/>
+    </node>
+</launch>
