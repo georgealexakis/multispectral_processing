@@ -3,7 +3,7 @@
 Multispectral Processing is an implementation in ROS Melodic for Multi-modal Data Processing and Implementation for Vineyard Analysis. The main focus of the project is the development
 of a method for the registration of multi-modal images in order to obtain a three-dimensional
 reconstruction of the vine enriched with photometric or radiometric data. Furthermore, an
-articial intelligence module is developed to jointly process images from the different modalities
+artificial intelligence module is developed to jointly process images from the different modalities
 for a detailed analysis of the plant's condition.
 
 # Packages to be installed
