@@ -56,3 +56,4 @@ for a detailed analysis of the plant's condition.
 * right.yaml: Calibration parameters for stereo vision.
 * homography1.yaml: This file contains the perspective transformation matrix between the images for approach 1.
 * homography2.yaml: This file contains the perspective transformation matrix between the images  for approach 2.
+* data folder: This folder contains multiple images for experiments. 
