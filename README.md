@@ -6,7 +6,7 @@ reconstruction of the vine enriched with photometric or radiometric data. Furthe
 artificial intelligence module is developed to jointly process images from the different modalities
 for a detailed analysis of the plant's condition.
 
-## Packages to be installed
+## Packages Installation
 
 * ueye_cam: ROS nodelet for multispectral camera that wraps drivers and API.
 * iai_kinect2: Package that provides tools for Kinect v2 such as bridge, calibration, etc.
