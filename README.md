@@ -1,4 +1,4 @@
-# Multispectral_processing - Multi-modal Data Processing and Implementation for Vineyard Analysis
+# Multispectral Processing - Multi-modal Data Processing and Implementation for Vineyard Analysis
 
 Multispectral Processing is an implementation in ROS Melodic for Multi-modal Data Processing and Implementation for Vineyard Analysis. The main focus of the project is the development
 of a method for the registration of multi-modal images in order to obtain a three-dimensional
@@ -94,12 +94,47 @@ Change permissions to all python files to executable with the command bellow for
 $ roscd multispectral_processing/src
 $ chmod +x *.py
 ```
+### Image Registration
+
+For the whole implementation is used C++ and Python code. Every node is developed in C++ and with Python. 
+
+1. Multispectral image camera and kinect registration, via feature detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
+
+`<node name="corners_registrator" pkg="multispectral_processing" type="corners_registrator" args="nocapture" output="screen"/>`
+
+and run
+
+`$ roslaunch multispectral_processing registration_approach1_cpp.launch`
+
+2. Multispectral image camera and kinect registration, via feature detection (Python). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
+
+`<node name="features_registrator" pkg="multispectral_processing" type="features_registrator.py" args="nocapture" output="screen"/>`
+
+and run
+
+`$ roslaunch multispectral_processing registration_approach1_py.launch`
+
+3. Multispectral image camera and kinect registration, via chessboard coreners detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
+
+`<node name="corners_registrator" pkg="multispectral_processing" type="corners_registrator" args="nocapture" output="screen"/>`
+
+and run
+
+`$ roslaunch multispectral_processing registration_approach2_cpp.launch`
+
+4. Multispectral image camera and kinect registration, via chessboard coreners detection  (Python). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
+
+`<node name="features_registrator" pkg="multispectral_processing" type="features_registrator.py" args="nocapture" output="screen"/>`
+
+and run
+
+`$ roslaunch multispectral_processing registration_approach2_py.launch`
 
 ## Demo Experiments
 
 These experiments include only the imagees of the multispectral camera and the included processes. Run experiments with the already captured images located in [/data/simulation](/data/simulation) folder and follow the steps bellow:
 
-1. Comment the includes below in cms_cpp.launch/cms_py.launch files.
+1. Comment the includes below in [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_cpp.launch) file.
 
 ```
 <!-- <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/> -->
@@ -110,7 +145,7 @@ These experiments include only the imagees of the multispectral camera and the i
 `<node name="experiments" pkg="multispectral_processing" type="experiments" args="7" output="screen"/>`
 
 3. Choose the dataset that you want by changing the "args" value.
-4. Run cms_cpp.launch/cms_py.launch file.
+4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_cpp.launch) file.
 
 ## License
 
