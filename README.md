@@ -137,7 +137,8 @@ For the whole implementation is used C++ and Python code. Every node is develope
 
 For mapping by using rtabmap_ros package:
 
-`$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=false`
+1. Run one of the registration approaches with args="nocapture".
+2. Run the command to start rtabmap_ros package: `$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=false`
 
 ## Demo Experiments
 
