@@ -88,6 +88,29 @@ $ catkin_make
 
 ## Execution
 
+Change permissions to all python files to executable with the command bellow for each file:
+
+```
+$ roscd multispectral_processing/src
+$ chmod +x *.py
+```
+
+## Demo Experiments
+
+These experiments include only the imagees of the multispectral camera and the included processes. Run experiments with the already captured images located in [/data/simulation](https://github.com/georgealexakis/multispectral_processing/tree/master/data/simulation) folder and follow the steps bellow:
+
+1. Comment the includes below in cms_cpp.launch/cms_py.launch files.
+
+```
+<!-- <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/> -->
+<!-- <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/> -->
+```
+2. Uncomment the includes below in cms_cpp.launch or cms_py.launch files.
+
+`<node name="experiments" pkg="multispectral_processing" type="experiments" args="7" output="screen"/>`
+
+3. Choose the dataset that you want by changing the "args" value.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
