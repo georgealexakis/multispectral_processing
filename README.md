@@ -88,43 +88,46 @@ $ catkin_make
 
 ## Execution
 
+### Permissions
+
 Change permissions to all python files to executable with the command bellow for each file:
 
 ```
 $ roscd multispectral_processing/src
 $ chmod +x *.py
 ```
+
 ### Image Registration
 
-For the whole implementation is used C++ and Python code. Every node is developed with C++ and with Python. 
+For the whole implementation is used C++ and Python code. Every node is developed with C++ and with Python respectively. Image registration is performed between multispectral camera and Kinect V2 camera.
 
 1. Multispectral image camera and kinect registration, via feature detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
-`<node name="corners_registrator" pkg="multispectral_processing" type="corners_registrator" args="nocapture" output="screen"/>`
+    `<node name="features_registrator" pkg="multispectral_processing" type="features_registrator" args="nocapture" output="screen"/>`
 
-and run
+    and run
 
-`$ roslaunch multispectral_processing registration_approach1_cpp.launch`
+    `$ roslaunch multispectral_processing registration_approach1_cpp.launch`
 
 2. Multispectral image camera and kinect registration, via feature detection (Python). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
-`<node name="features_registrator" pkg="multispectral_processing" type="features_registrator.py" args="nocapture" output="screen"/>`
+    `<node name="features_registrator" pkg="multispectral_processing" type="features_registrator.py" args="nocapture" output="screen"/>`
 
-and run
+    and run
 
-`$ roslaunch multispectral_processing registration_approach1_py.launch`
+    `$ roslaunch multispectral_processing registration_approach1_py.launch`
 
 3. Multispectral image camera and kinect registration, via chessboard coreners detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
-`<node name="corners_registrator" pkg="multispectral_processing" type="corners_registrator" args="nocapture" output="screen"/>`
+    `<node name="corners_registrator" pkg="multispectral_processing" type="corners_registrator" args="nocapture" output="screen"/>`
 
-and run
+    and run
 
-`$ roslaunch multispectral_processing registration_approach2_cpp.launch`
+    `$ roslaunch multispectral_processing registration_approach2_cpp.launch`
 
 4. Multispectral image camera and kinect registration, via chessboard coreners detection  (Python). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
-    `<node name="features_registrator" pkg="multispectral_processing" type="features_registrator.py" args="nocapture" output="screen"/>`
+    `<node name="corners_registrator" pkg="multispectral_processing" type="corners_registrator.py" args="nocapture" output="screen"/>`
 
     and run
 
@@ -136,13 +139,13 @@ These experiments include only the imagees of the multispectral camera and the i
 
 1. Comment the includes below in [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_cpp.launch) file.
 
-```
-<!-- <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/> -->
-<!-- <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/> -->
-```
+    ```
+    <!-- <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/> -->
+    <!-- <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/> -->
+    ```
 2. Uncomment the include experiments node.
 
-`<node name="experiments" pkg="multispectral_processing" type="experiments" args="7" output="screen"/>`
+    `<node name="experiments" pkg="multispectral_processing" type="experiments" args="7" output="screen"/>`
 
 3. Choose the dataset that you want by changing the "args" value.
 4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_cpp.launch) file.
