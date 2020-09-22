@@ -133,22 +133,28 @@ For the whole implementation is used C++ and Python code. Every node is develope
 
     `$ roslaunch multispectral_processing registration_approach2_py.launch`
 
+### 3D Reconstruction
+
+For mapping by using rtabmap_ros package:
+
+`$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=false`
+
 ## Demo Experiments
 
 These experiments include only the imagees of the multispectral camera and the included processes. Run experiments with the already captured images located in [/data/simulation](/data/simulation) folder and follow the steps bellow:
 
-1. Comment the includes below in [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_cpp.launch) file.
+1. Comment the includes below in [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_py.launch) file.
 
     ```
     <!-- <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/> -->
     <!-- <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/> -->
     ```
-2. Uncomment the include experiments node.
+2. Uncomment the include of [experiments.cpp](/src/experiments.cpp) node.
 
     `<node name="experiments" pkg="multispectral_processing" type="experiments" args="7" output="screen"/>`
 
 3. Choose the dataset that you want by changing the "args" value.
-4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_cpp.launch) file.
+4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_py.launch) file.
 
 ## License
 
