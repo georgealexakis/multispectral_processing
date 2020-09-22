@@ -96,7 +96,7 @@ $ chmod +x *.py
 ```
 ### Image Registration
 
-For the whole implementation is used C++ and Python code. Every node is developed in C++ and with Python. 
+For the whole implementation is used C++ and Python code. Every node is developed with C++ and with Python. 
 
 1. Multispectral image camera and kinect registration, via feature detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
@@ -124,11 +124,11 @@ and run
 
 4. Multispectral image camera and kinect registration, via chessboard coreners detection  (Python). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
-`<node name="features_registrator" pkg="multispectral_processing" type="features_registrator.py" args="nocapture" output="screen"/>`
+    `<node name="features_registrator" pkg="multispectral_processing" type="features_registrator.py" args="nocapture" output="screen"/>`
 
-and run
+    and run
 
-`$ roslaunch multispectral_processing registration_approach2_py.launch`
+    `$ roslaunch multispectral_processing registration_approach2_py.launch`
 
 ## Demo Experiments
 
