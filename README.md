@@ -97,7 +97,7 @@ $ chmod +x *.py
 
 ## Demo Experiments
 
-These experiments include only the imagees of the multispectral camera and the included processes. Run experiments with the already captured images located in [/data/simulation](https://github.com/georgealexakis/multispectral_processing/tree/master/data/simulation) folder and follow the steps bellow:
+These experiments include only the imagees of the multispectral camera and the included processes. Run experiments with the already captured images located in [/data/simulation](/data/simulation) folder and follow the steps bellow:
 
 1. Comment the includes below in cms_cpp.launch/cms_py.launch files.
 
@@ -105,11 +105,12 @@ These experiments include only the imagees of the multispectral camera and the i
 <!-- <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/> -->
 <!-- <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/> -->
 ```
-2. Uncomment the includes below in cms_cpp.launch or cms_py.launch files.
+2. Uncomment the include experiments node.
 
 `<node name="experiments" pkg="multispectral_processing" type="experiments" args="7" output="screen"/>`
 
 3. Choose the dataset that you want by changing the "args" value.
+4. Run cms_cpp.launch/cms_py.launch file.
 
 ## License
 
