@@ -8,6 +8,8 @@ for a detailed analysis of the plant's condition.
 
 ## Packages Installation
 
+Be sure that you have installed the melodic version of the packages bellow.
+
 * [ueye_cam](http://wiki.ros.org/ueye_cam): ROS nodelet for multispectral camera that wraps drivers and API.
 
 ```
