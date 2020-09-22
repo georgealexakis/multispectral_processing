@@ -90,7 +90,7 @@ $ catkin_make
 
 ### Permissions
 
-Change permissions to all python files to executable with the command bellow for each file:
+Change permissions to all python files to be executable with the command bellow:
 
 ```
 $ roscd multispectral_processing/src
