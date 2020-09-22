@@ -8,11 +8,37 @@ for a detailed analysis of the plant's condition.
 
 ## Packages Installation
 
-* ueye_cam: ROS nodelet for multispectral camera that wraps drivers and API.
-* iai_kinect2: Package that provides tools for Kinect v2 such as bridge, calibration, etc.
-* libfreenect2: Drivers for Kinect v2.
-* image_pipeline: Package that provides functionalities about cloud point, calibration, etc.
-* rosbridge_suite: Connection between ROS and camera controller.
+* [ueye_cam](http://wiki.ros.org/ueye_cam): ROS nodelet for multispectral camera that wraps drivers and API.
+
+```
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/anqixu/ueye_cam.git
+$ cd ~/catkin_ws
+$ catkin_make
+```
+
+* [iai_kinect2](https://github.com/code-iai/iai_kinect2): Package that provides tools for Kinect v2 such as bridge between kinect and ROS, cameras calibration, etc.
+
+* [libfreenect2](https://github.com/OpenKinect/libfreenect2): Drivers for Kinect v2.
+
+* [image_pipeline](http://wiki.ros.org/image_pipeline): Package that provides functionalities about cloud point, calibration, etc.
+
+```
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/ros-perception/image_pipeline.git
+$ cd ~/catkin_ws
+$ catkin_make
+```
+
+* [rosbridge_suite](http://wiki.ros.org/rosbridge_suite): Connection between ROS and camera controller.
+
+`$ sudo apt-get install ros-melodic-rosbridge-server`
+
+* [rviz](http://wiki.ros.org/rviz): 3D visualization tool for ROS.
+
+* [rtabmap_ros](http://wiki.ros.org/rtabmap_ros): A RGB-D SLAM approach with real-time constraints.
+
+`$ sudo apt-get install ros-melodic-rtabmap-ros`
 
 ## List of source files
 
@@ -57,6 +83,8 @@ for a detailed analysis of the plant's condition.
 * homography1.yaml: This file contains the perspective transformation matrix between the images for approach 1.
 * homography2.yaml: This file contains the perspective transformation matrix between the images  for approach 2.
 * data folder: This folder contains multiple images for experiments.
+
+## Execution
 
 ## License
 
