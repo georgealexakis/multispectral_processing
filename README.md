@@ -181,7 +181,9 @@ Follow the steps below to succeed the best image acquisition.
 7. Save a single frame or multiple frames when running image registration in no capture mode, by using the command below:
 
     `$ rosrun multispectral_processing backup.py`
+
     or
+    
     `$ rosrun multispectral_processing backup`
 
 ### Image Registration
