@@ -113,7 +113,7 @@ Change permissions to all python files to be executable with the command bellow:
 
 For the whole implementation is used C++ and Python code. Every node is developed with C++ and with Python respectively. Image registration is performed between multispectral camera and Kinect V2 camera.
 
-1. Multispectral image camera and kinect registration, via feature detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
+1. Multispectral camera and kinect cameras image registration, via feature detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
     `<node name="features_registrator" pkg="multispectral_processing" type="features_registrator" args="nocapture" output="screen"/>`
 
@@ -121,7 +121,7 @@ For the whole implementation is used C++ and Python code. Every node is develope
 
     `$ roslaunch multispectral_processing registration_approach1_cpp.launch`
 
-2. Multispectral image camera and kinect registration, via feature detection (Python). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
+2. Multispectral camera and kinect cameras image registration, via feature detection (Python). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
     `<node name="features_registrator" pkg="multispectral_processing" type="features_registrator.py" args="nocapture" output="screen"/>`
 
@@ -129,7 +129,7 @@ For the whole implementation is used C++ and Python code. Every node is develope
 
     `$ roslaunch multispectral_processing registration_approach1_py.launch`
 
-3. Multispectral image camera and kinect registration, via chessboard coreners detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
+3. Multispectral camera and kinect cameras image registration, via chessboard coreners detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
     `<node name="corners_registrator" pkg="multispectral_processing" type="corners_registrator" args="nocapture" output="screen"/>`
 
@@ -137,7 +137,7 @@ For the whole implementation is used C++ and Python code. Every node is develope
 
     `$ roslaunch multispectral_processing registration_approach2_cpp.launch`
 
-4. Multispectral image camera and kinect registration, via chessboard coreners detection  (Python). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
+4. Multispectral camera and kinect cameras image registration, via chessboard coreners detection  (Python). Edit args="capture" to start corners capturing or args="nocapture" to start publishing.
 
     `<node name="corners_registrator" pkg="multispectral_processing" type="corners_registrator.py" args="nocapture" output="screen"/>`
 
@@ -153,6 +153,12 @@ For mapping by using rtabmap_ros package:
 2. Run the command to start rtabmap_ros package:
 
     `$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=false`
+
+    or for external odometry use:
+
+    `$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=false visual_odometry:=false odom_topic:=/my_odometry`
+
+    and replace odom_topic:=/my_odometry with the external odometry topic.
 
 ## Demo Experiments
 
