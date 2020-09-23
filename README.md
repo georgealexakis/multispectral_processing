@@ -110,10 +110,10 @@ Be sure that you have installed the melodic version of the packages below.
 * ueye_camera_gige.launch: Run multispectral nodelet to turn on the camera.
 * stereo_calibration.launch: Calibtation node for stereo cameras.
 * calibration.launch: Run the calibration node for the multispectral camera.
-* registtration_approach1_cpp.launch: Image registration launch file for C++ node with approach 1.
-* registtration_approach1_py.launch: Image registration launch file for Python node with approach 1.
-* registtration_approach2_cpp.launch: Image registration launch file for C++ node with approach 2.
-* registtration_approach2_py.launch: Image registration launch file for Python node with approach 2.
+* registration_approach1_cpp.launch: Image registration launch file for C++ node with approach 1.
+* registration_approach1_py.launch: Image registration launch file for Python node with approach 1.
+* registration_approach2_cpp.launch: Image registration launch file for C++ node with approach 2.
+* registration_approach2_py.launch: Image registration launch file for Python node with approach 2.
 
 ## Resources
 
@@ -179,6 +179,7 @@ Follow the steps below to succeed the best image acquisition.
 	* Set flatfield or not.
 6. Start one of the registration approaches as described below to register Homographies (rotations, translations, scale). Be sure theat the sensors are fixed. "DO NOT TOUCH SENSORS".
 7. Save a single frame or multiple frames when running image registration in no capture mode, by using the command below:
+
     `$ rosrun multispectral_processing backup.py`
     or
     `$ rosrun multispectral_processing backup`
