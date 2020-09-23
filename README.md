@@ -221,10 +221,11 @@ These experiments include only the imagees of the multispectral camera and the i
 
 ## Screenshots
 
+<img src="/data/images/img1.png" width="300" title="Sensors"/>
+
 <p float="center">
-  <img src="/data/images/img2.png" width="100" />
-  <img src="/data/images/img3.png" width="100" /> 
-  <img src="/data/images/img4.png" width="100" />
+  <img src="/data/images/img2.png" width="200" />
+  <img src="/data/images/img3.png" width="200" />
 </p>
 
 ## License
