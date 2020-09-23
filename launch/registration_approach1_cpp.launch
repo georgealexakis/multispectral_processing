@@ -1,5 +1,5 @@
 <launch>
-  <!-- Multispectral image camera and kinect registration, via feature detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing. -->
+  <!-- Multispectral camera and kinect cameras image registration, via feature detection (C++). Edit args="capture" to start corners capturing or args="nocapture" to start publishing. -->
   <rosparam file="$(find multispectral_processing)/resources/multispectral_camera.yaml"/>
   <rosparam file="$(find multispectral_processing)/resources/parameters.yaml"/>
   <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/>
