@@ -22,7 +22,7 @@ for a detailed analysis of the plant's condition.
 
 [Demo Experiments](#demo-experiments)
 
-[Screenshots](#screenshots)
+[Figures](#figures)
 
 [License](#license)
 
@@ -219,7 +219,7 @@ These experiments include only the imagees of the multispectral camera and the i
 3. Choose the dataset that you want by changing the "args" value.
 4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launch](/launch/cms_py.launch) file.
 
-## Screenshots
+## Figures
 
 ### Sensors Position
 
