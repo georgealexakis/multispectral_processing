@@ -294,7 +294,7 @@ These experiments include only the imagees of the multispectral camera and the i
 ### Image Registration with Feature Matching
 
 <p align="center">
-    <img src="/data/images/img11.png" width="60%" title="Image Registration with Feature Matching" />
+    <img src="/data/images/img11.png" width="80%" title="Image Registration with Feature Matching" />
 </p>
 
 ### Image Registration with Corner Matching
@@ -306,11 +306,11 @@ These experiments include only the imagees of the multispectral camera and the i
 ### 3D Reconstruction
 
 <p align="center">
-    <img src="/data/images/img13.png" width="80%" title="3D Reconstruction 1" />
+    <img src="/data/images/img13.png" width="70%" title="3D Reconstruction 1" />
 </p>
 
 <p align="center">
-    <img src="/data/images/img14.png" width="60%" title="3D Reconstruction 2" />
+    <img src="/data/images/img14.png" width="70%" title="3D Reconstruction 2" />
 </p>
 
 ## License
