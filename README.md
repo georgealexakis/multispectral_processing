@@ -38,7 +38,7 @@ for a detailed analysis of the plant's condition.
 
 Be sure that you have installed the melodic version of the packages bellow.
 
-* [ueye_cam](http://wiki.ros.org/ueye_cam): ROS nodelet for multispectral camera that wraps drivers and API.
+* [ueye_cam](http://wiki.ros.org/ueye_cam): ROS package that that wraps the driver API for UEye cameras by IDS Imaging Development Systems GMBH.
 
     ```
     $ cd ~/catkin_ws/src
@@ -60,7 +60,7 @@ Be sure that you have installed the melodic version of the packages bellow.
     $ catkin_make
     ```
 
-* [rosbridge_suite](http://wiki.ros.org/rosbridge_suite): Connection between ROS and camera controller.
+* [rosbridge_suite](http://wiki.ros.org/rosbridge_suite): ROS package that provides a JSON API to ROS functionality for non-ROS programs.
 
     `$ sudo apt-get install ros-melodic-rosbridge-server`
 
