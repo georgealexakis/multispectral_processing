@@ -221,11 +221,22 @@ These experiments include only the imagees of the multispectral camera and the i
 
 ## Screenshots
 
-<img src="/data/images/img1.png" width="300" title="Sensors"/>
+Sensors Position
+<p float="middle">
+    <img src="/data/images/img1.png" width="200" title="Sensors Position"/>
+</p>
 
-<p float="center">
-  <img src="/data/images/img2.png" width="200" />
-  <img src="/data/images/img3.png" width="200" />
+<p float="middle">
+  <img src="/data/images/img2.png" width="50%" />
+  <img src="/data/images/img3.png" width="50%" />
+</p>
+
+NDVI calculation, Colored vegetation, Colored Vegetation After Crosstalk Correction
+<p float="middle">
+    <img src="/data/images/img5.png" width="25%" />
+    <img src="/data/images/img6.png" width="25%" />
+    <img src="/data/images/img7.png" width="25%" />
+    <img src="/data/images/img8.png" width="25%" />
 </p>
 
 ## License
