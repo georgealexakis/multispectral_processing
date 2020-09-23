@@ -227,7 +227,7 @@ These experiments include only the imagees of the multispectral camera and the i
     <img src="/data/images/img1.png" width="30%" title="Sensors Position"/>
 </p>
 
-### Captured Image/Bands by the Multispectral Camera and OpenCV UI
+### Captured Image & Bands by the Multispectral Camera and OpenCV UI
 
 <p align="center">
     <img src="/data/images/img2.png" width="45%" />
@@ -247,6 +247,28 @@ These experiments include only the imagees of the multispectral camera and the i
     <img src="/data/images/img6.png" width="32%" />
     <img src="/data/images/img7.png" width="32%" />
     <img src="/data/images/img8.png" width="32%" />
+</p>
+
+### Image Registration with Feature Matching
+
+<p align="center">
+    <img src="/data/images/img11.png" width="60%" />
+</p>
+
+### Image Registration with Corner Matching
+
+<p align="center">
+    <img src="/data/images/img12.png" width="60%" />
+</p>
+
+### 3D Reconstruction
+
+<p align="center">
+    <img src="/data/images/img13.png" width="60%" />
+</p>
+
+<p align="center">
+    <img src="/data/images/img14.png" width="60%" />
 </p>
 
 ## License
