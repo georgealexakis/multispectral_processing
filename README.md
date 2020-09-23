@@ -234,21 +234,16 @@ These experiments include only the imagees of the multispectral camera and the i
     <img src="/data/images/img3.png" width="45%" />
 </p>
 
-### Captured RGB Image by the Kinect V2 Sensor
+### Captured RGB Image by the Kinect V2 Sensor, Captured Bands by the Multispectral Camera
 
-<p>
-    <img src="/data/images/img4.png" width="60%" />
-</p>
-
-### Captured Bands by the Multispectral Camera
-
-<p>
-    <img src="/data/images/img5.png" width="60%" />
+<p align="center">
+    <img src="/data/images/img4.png" width="45%" />
+    <img src="/data/images/img5.png" width="45%" />
 </p>
 
 ### NDVI calculation, Colored vegetation, Colored Vegetation After Crosstalk Correction
 
-<p>
+<p align="center">
     <img src="/data/images/img6.png" width="32%" />
     <img src="/data/images/img7.png" width="32%" />
     <img src="/data/images/img8.png" width="32%" />
