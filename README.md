@@ -249,6 +249,13 @@ These experiments include only the imagees of the multispectral camera and the i
     <img src="/data/images/img8.png" width="32%" />
 </p>
 
+### Background Subtraction by using Otsu's method
+
+<p align="center">
+    <img src="/data/images/img9.png" width="45%" />
+    <img src="/data/images/img10.png" width="45%" />
+</p>
+
 ### Image Registration with Feature Matching
 
 <p align="center">
