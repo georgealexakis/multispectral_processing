@@ -175,8 +175,8 @@ Follow the steps below to succeed the best image acquisition.
     * Others.
 5. Pre-processing parameters:
 	* Set white balance, white reference.
-	* Set crosstalk or not. 
-	* Set flatfield or not.
+	* Set crosstalk correction or not. 
+	* Set flatfield correction or not.
 6. Start one of the registration approaches as described below to register Homographies (rotations, translations, scale). Be sure theat the sensors are fixed. "DO NOT TOUCH SENSORS".
 7. Save a single frame or multiple frames when running image registration in no capture mode, by using the command below:
 
