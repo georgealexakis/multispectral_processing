@@ -222,7 +222,7 @@ These experiments include only the imagees of the multispectral camera and the i
 ## Screenshots
 
 Sensors Position
-<p>
+<p align="center">
     <img src="/data/images/img1.png" width="30%" title="Sensors Position"/>
 </p>
 
