@@ -24,8 +24,6 @@ for a detailed analysis of the plant's condition.
 
 ## Requirements
 
-Below is presented  the software and hardware that this implementation has been tested.
-
 ### Software
 
 * ROS Melodic
