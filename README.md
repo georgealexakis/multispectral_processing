@@ -6,18 +6,32 @@ reconstruction of the vine enriched with photometric or radiometric data. Furthe
 artificial intelligence module is developed to jointly process images from the different modalities
 for a detailed analysis of the plant's condition.
 
+## Table of Contents
+
+[Packages Installation](#packages-installation)
+
+[Source Files](#source-files)
+
+[Launch Files](#launch-files)
+
+[Resources](#resources)
+
+[Execution](#execution)
+
+[License](#license)
+
 ## Packages Installation
 
 Be sure that you have installed the melodic version of the packages bellow.
 
 * [ueye_cam](http://wiki.ros.org/ueye_cam): ROS nodelet for multispectral camera that wraps drivers and API.
 
-```
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/anqixu/ueye_cam.git
-$ cd ~/catkin_ws
-$ catkin_make
-```
+    ```
+    $ cd ~/catkin_ws/src
+    $ git clone https://github.com/anqixu/ueye_cam.git
+    $ cd ~/catkin_ws
+    $ catkin_make
+    ```
 
 * [iai_kinect2](https://github.com/code-iai/iai_kinect2): Package that provides tools for Kinect v2 such as bridge between kinect and ROS, cameras calibration, etc.
 
@@ -25,24 +39,24 @@ $ catkin_make
 
 * [image_pipeline](http://wiki.ros.org/image_pipeline): Package that provides functionalities about cloud point, calibration, etc.
 
-```
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/ros-perception/image_pipeline.git
-$ cd ~/catkin_ws
-$ catkin_make
-```
+    ```
+    $ cd ~/catkin_ws/src
+    $ git clone https://github.com/ros-perception/image_pipeline.git
+    $ cd ~/catkin_ws
+    $ catkin_make
+    ```
 
 * [rosbridge_suite](http://wiki.ros.org/rosbridge_suite): Connection between ROS and camera controller.
 
-`$ sudo apt-get install ros-melodic-rosbridge-server`
+    `$ sudo apt-get install ros-melodic-rosbridge-server`
 
 * [rviz](http://wiki.ros.org/rviz): 3D visualization tool for ROS.
 
 * [rtabmap_ros](http://wiki.ros.org/rtabmap_ros): A RGB-D SLAM approach with real-time constraints.
 
-`$ sudo apt-get install ros-melodic-rtabmap-ros`
+    `$ sudo apt-get install ros-melodic-rtabmap-ros`
 
-## List of source files
+## Source Files
 
 * band_separator.cpp: C++ node for multispectral image separation, pre-processing and processing. Provides GUI for multiple tasks.
 * band_separator.py: Python node for multispectral image separation, pre-processing and processing. Provides GUI for multiple tasks.
@@ -60,7 +74,7 @@ $ catkin_make
 * tf_nde.cpp: Tranformation node with C++.
 * tf_nde.py: Tranformation node with Python.
 
-## List of launch files
+## Launch Files
 
 * cms_cpp.launch: Run multispectral camera, pre-processing functionalities with C++, connection between camera and controller.
 * cms_py.launch: Run multispectral camera, pre-processing functionalities with Python, connection between camera and controller.
@@ -92,10 +106,10 @@ $ catkin_make
 
 Change permissions to all python files to be executable with the command bellow:
 
-```
-$ roscd multispectral_processing/src
-$ chmod +x *.py
-```
+    ```
+    $ roscd multispectral_processing/src
+    $ chmod +x *.py
+    ```
 
 ### Image Registration
 
