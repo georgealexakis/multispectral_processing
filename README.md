@@ -221,36 +221,37 @@ These experiments include only the imagees of the multispectral camera and the i
 
 ## Screenshots
 
-Sensors Position
+### Sensors Position
+
 <p align="center">
     <img src="/data/images/img1.png" width="30%" title="Sensors Position"/>
 </p>
 
-Captured Image by the Multispectral Camera and OpenCV UI
-<p>
-    <img src="/data/images/img2.png" width="60%" />
+### Captured Image/Bands by the Multispectral Camera and OpenCV UI
+
+<p align="center">
+    <img src="/data/images/img2.png" width="45%" />
+    <img src="/data/images/img3.png" width="45%" />
 </p>
 
-Captured Bands by the Multispectral Camera
-<p>
-    <img src="/data/images/img3.png" width="60%" />
-</p>
+### Captured RGB Image by the Kinect V2 Sensor
 
-Captured RGB Image by the Kinect V2 Sensor
 <p>
     <img src="/data/images/img4.png" width="60%" />
 </p>
 
-Captured Bands by the Multispectral Camera
+### Captured Bands by the Multispectral Camera
+
 <p>
     <img src="/data/images/img5.png" width="60%" />
 </p>
 
-NDVI calculation, Colored vegetation, Colored Vegetation After Crosstalk Correction
+### NDVI calculation, Colored vegetation, Colored Vegetation After Crosstalk Correction
+
 <p>
-    <img src="/data/images/img6.png" width="25%" />
-    <img src="/data/images/img7.png" width="25%" />
-    <img src="/data/images/img8.png" width="25%" />
+    <img src="/data/images/img6.png" width="32%" />
+    <img src="/data/images/img7.png" width="32%" />
+    <img src="/data/images/img8.png" width="32%" />
 </p>
 
 ## License
