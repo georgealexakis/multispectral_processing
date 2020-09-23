@@ -229,11 +229,11 @@ For mapping by using rtabmap_ros package:
 1. Run one of the registration approaches with args="nocapture".
 2. Run the command to start rtabmap_ros package:
 
-    `$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=false`
+    `$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=true`
 
     or for external odometry use:
 
-    `$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=false visual_odometry:=false odom_topic:=/my_odometry`
+    `$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=true visual_odometry:=false odom_topic:=/my_odometry`
 
     and replace odom_topic:=/my_odometry with the external odometry topic.
 
