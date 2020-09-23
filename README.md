@@ -106,10 +106,8 @@ Be sure that you have installed the melodic version of the packages bellow.
 
 Change permissions to all python files to be executable with the command bellow:
 
-    ```
     $ roscd multispectral_processing/src
     $ chmod +x *.py
-    ```
 
 ### Image Registration
 
