@@ -152,13 +152,15 @@ For the whole implementation is used C++ and Python code. Every node is develope
 For mapping by using rtabmap_ros package:
 
 1. Run one of the registration approaches with args="nocapture".
-2. Run the command to start rtabmap_ros package: `$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=false`
+2. Run the command to start rtabmap_ros package:
+
+    `$ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" rgb_topic:=/multispectral/image_mono depth_topic:=/multispectral/image_depth camera_info_topic:=/multispectral/camera_info approx_sync:=false`
 
 ## Demo Experiments
 
 These experiments include only the imagees of the multispectral camera and the included processes. Run experiments with the already captured images located in [/data/simulation](/data/simulation) folder and follow the steps bellow:
 
-1. Comment the includes below in [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_py.launch) file.
+1. Comment the includes below in [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launch](/launch/cms_py.launch) file.
 
     ```
     <!-- <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/> -->
@@ -169,7 +171,7 @@ These experiments include only the imagees of the multispectral camera and the i
     `<node name="experiments" pkg="multispectral_processing" type="experiments" args="7" output="screen"/>`
 
 3. Choose the dataset that you want by changing the "args" value.
-4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launchn](/launch/cms_py.launch) file.
+4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launch](/launch/cms_py.launch) file.
 
 ## License
 
