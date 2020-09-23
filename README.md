@@ -8,6 +8,8 @@ for a detailed analysis of the plant's condition.
 
 ## Table of Contents
 
+[Requirements](#requirements)
+
 [Packages Installation](#packages-installation)
 
 [Source Files](#source-files)
@@ -19,6 +21,20 @@ for a detailed analysis of the plant's condition.
 [Execution](#execution)
 
 [License](#license)
+
+## Requirements
+
+Below is presented  the software and hardware that this implementation has been tested.
+
+### Software
+
+* ROS Melodic
+* Ubuntu 18.04.5 LTS
+
+### Hardware
+
+* CMS-V GigE Silios Multispectral Camera
+* Microsoft Kinect V2 Sensor: RGB-D Camera
 
 ## Packages Installation
 
@@ -106,8 +122,10 @@ Be sure that you have installed the melodic version of the packages bellow.
 
 Change permissions to all python files to be executable with the command bellow:
 
+    ```
     $ roscd multispectral_processing/src
     $ chmod +x *.py
+    ```
 
 ### Image Registration
 
