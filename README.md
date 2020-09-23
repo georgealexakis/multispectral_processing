@@ -223,7 +223,7 @@ These experiments include only the imagees of the multispectral camera and the i
 
 Sensors Position
 <p>
-    <img src="/data/images/img1.png" width="60%" title="Sensors Position"/>
+    <img src="/data/images/img1.png" width="30%" title="Sensors Position"/>
 </p>
 
 Captured Image by the Multispectral Camera and OpenCV UI
@@ -248,9 +248,9 @@ Captured Bands by the Multispectral Camera
 
 NDVI calculation, Colored vegetation, Colored Vegetation After Crosstalk Correction
 <p>
-    <img src="/data/images/img6.png" width="33%" />
-    <img src="/data/images/img7.png" width="33%" />
-    <img src="/data/images/img8.png" width="33%" />
+    <img src="/data/images/img6.png" width="25%" />
+    <img src="/data/images/img7.png" width="25%" />
+    <img src="/data/images/img8.png" width="25%" />
 </p>
 
 ## License
