@@ -48,7 +48,7 @@ for a detailed analysis of the plant's condition.
 
 ## Packages Installation
 
-Be sure that you have installed the melodic version of the packages bellow.
+Be sure that you have installed the melodic version of the packages below.
 
 * [ueye_cam](http://wiki.ros.org/ueye_cam): ROS package that that wraps the driver API for UEye cameras by IDS Imaging Development Systems GMBH.
 
@@ -152,12 +152,36 @@ Be sure that you have installed the melodic version of the packages bellow.
 
 ### Permissions
 
-Change permissions to all python files to be executable with the command bellow:
+Change permissions to all python files to be executable with the command below:
 
 ```
 $ roscd multispectral_processing/src
 $ chmod +x *.py
 ```
+
+### Preparation for Image Acquisition
+
+Follow the steps below to succeed the best image acquisition.
+
+1. Connection of multispectral camera, kinect V2 sensor and PC with ROS installation.
+2. Sensor alignment.
+3. Adjusting the optics:
+    * Adjust the "Focus or Zoom" of the lens on an object at the same distance as the vine.
+    * Adjust the "Aperture" of the lens.
+4. Set acquisitions parameters
+    * Gain (not auto gain, lower is better).
+    * Exposure time (we can change it as convenience).
+    * Framerate.
+    * Others.
+5. Pre-processing parameters:
+	* Set white balance, white reference.
+	* Set crosstalk or not. 
+	* Set flatfield or not.
+6. Start one of the registration approaches as described below to register Homographies (rotations, translations, scale). Be sure theat the sensors are fixed. "DO NOT TOUCH SENSORS".
+7. Save a single frame or multiple frames when running image registration in no capture mode, by using the command below:
+    `$ rosrun multispectral_processing backup.py`
+    or
+    `$ rosrun multispectral_processing backup`
 
 ### Image Registration
 
@@ -212,7 +236,7 @@ For mapping by using rtabmap_ros package:
 
 ## Demo Experiments
 
-These experiments include only the imagees of the multispectral camera and the included processes. Run experiments with the already captured images located in [/data/simulation](/data/simulation) folder and follow the steps bellow:
+These experiments include only the imagees of the multispectral camera and the included processes. Run experiments with the already captured images located in [/data/simulation](/data/simulation) folder and follow the steps below:
 
 1. Comment the includes below in [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launch](/launch/cms_py.launch) file.
 
