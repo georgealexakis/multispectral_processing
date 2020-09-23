@@ -59,9 +59,9 @@ Be sure that you have installed the melodic version of the packages below.
     $ catkin_make
     ```
 
-* [iai_kinect2](https://github.com/code-iai/iai_kinect2): Package that provides tools for Kinect v2 such as bridge between kinect and ROS, cameras calibration, etc.
+* [iai_kinect2](https://github.com/code-iai/iai_kinect2): Package that provides tools for Kinect V2 such as bridge between kinect and ROS, cameras calibration, etc.
 
-* [libfreenect2](https://github.com/OpenKinect/libfreenect2): Drivers for Kinect v2.
+* [libfreenect2](https://github.com/OpenKinect/libfreenect2): Drivers for Kinect V2.
 
 * [image_pipeline](http://wiki.ros.org/image_pipeline): Package that provides functionalities about cloud point, calibration, etc.
 
@@ -104,16 +104,16 @@ Be sure that you have installed the melodic version of the packages below.
 
 * cms_cpp.launch: Run multispectral camera, pre-processing functionalities with C++, connection between camera and controller.
 * cms_py.launch: Run multispectral camera, pre-processing functionalities with Python, connection between camera and controller.
-* camera_configurator: Run multispectral camera, connection between camera and controller.
+* camera_configurator.launch: Run multispectral camera, connection between camera and controller.
 * kinect2_bridge.launch: Run kinect.
-* point_cloud_generator: Generate point clouds from given topics.
+* point_cloud_generator.launch: Generate point clouds from given topics.
 * ueye_camera_gige.launch: Run multispectral nodelet to turn on the camera.
 * stereo_calibration.launch: Calibtation node for stereo cameras.
 * calibration.launch: Run the calibration node for the multispectral camera.
-* registration_approach1_cpp.launch: Image registration launch file for C++ node with approach 1.
-* registration_approach1_py.launch: Image registration launch file for Python node with approach 1.
-* registration_approach2_cpp.launch: Image registration launch file for C++ node with approach 2.
-* registration_approach2_py.launch: Image registration launch file for Python node with approach 2.
+* registration_approach1_cpp.launch: Image registration launch file for C++ node with approach 1 (feature detection).
+* registration_approach1_py.launch: Image registration launch file for Python node with approach 1 (feature detection).
+* registration_approach2_cpp.launch: Image registration launch file for C++ node with approach 2 (corner detection).
+* registration_approach2_py.launch: Image registration launch file for Python node with approach 2 (corner detection).
 
 ## Resources
 
@@ -122,9 +122,9 @@ Be sure that you have installed the melodic version of the packages below.
 * multispectral_camera.yaml: Calibration parameters for multispectral camera.
 * left.yaml: Calibration parameters for stereo vision.
 * right.yaml: Calibration parameters for stereo vision.
-* homography1.yaml: This file contains the perspective transformation matrix between the images for approach 1.
-* homography2.yaml: This file contains the perspective transformation matrix between the images  for approach 2.
-* data folder: This folder contains multiple images for experiments.
+* homography1.yaml: This file contains the perspective transformation matrix between the images for approach 1 (feature detection).
+* homography2.yaml: This file contains the perspective transformation matrix between the images  for approach 2 (corenr detection).
+* data folder: This folder contains multiple images for experiments, etc.
 
 ## Execution
 
