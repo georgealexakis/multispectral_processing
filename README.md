@@ -140,7 +140,7 @@ Be sure that you have installed the melodic version of the packages below.
 
     * Crosstalk Correction.
 
-    * Vegetation Indeces Calculation NDVI, MCARI, MSR, SAVI, TVI, etc.
+    * Vegetation Indices Calculation NDVI, MCARI, MSR, SAVI, TVI, etc.
 
 2. Both Cameras:
 
