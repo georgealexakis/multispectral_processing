@@ -20,19 +20,23 @@ for a detailed analysis of the plant's condition.
 
 [Execution](#execution)
 
+[Demo Experiments](#demo-experiments)
+
+[Screenshots](#screenshots)
+
 [License](#license)
 
 ## Requirements
 
 ### Software
 
-* ROS Melodic
-* Ubuntu 18.04.5 LTS
+* ROS Melodic Morenia.
+* Ubuntu 18.04.5 LTS.
 
 ### Hardware
 
-* CMS-V GigE Silios Multispectral Camera
-* Microsoft Kinect V2 Sensor: RGB-D Camera
+* CMS-V GigE Silios Multispectral Camera.
+* Microsoft Kinect V2 Sensor: RGB-D Camera.
 
 ## Packages Installation
 
@@ -128,11 +132,11 @@ Be sure that you have installed the melodic version of the packages bellow.
 
     * Crosstalk Correction.
 
+    * Vegetation Indeces Calculation NDVI, MCARI, MSR, SAVI, TVI, etc.
+
 2. Both Cameras:
 
     * Cameras Geometric Calibration.
-
-    * Vegetation Indeces Calculation NDVI, MCARI, MSR, SAVI, TVI, etc.
 
     * Multi-modal Image Registration.
 
@@ -214,6 +218,10 @@ These experiments include only the imagees of the multispectral camera and the i
 
 3. Choose the dataset that you want by changing the "args" value.
 4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launch](/launch/cms_py.launch) file.
+
+## Screenshots
+
+![alt-text-1](/data/images/img1.png "title-1") ![alt-text-2](/data/images/img2.png "title-2")
 
 ## License
 
