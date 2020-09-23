@@ -116,6 +116,28 @@ Be sure that you have installed the melodic version of the packages bellow.
 
 ## Execution
 
+### Functionalities
+
+1. Multispectral Camera:
+
+    * Acquisition & Band Separation.
+
+    * Flat-field Correction.
+
+    * White Balance Normalization.
+
+    * Crosstalk Correction.
+
+2. Both Cameras:
+
+    * Cameras Geometric Calibration.
+
+    * Vegetation Indeces Calculation NDVI, MCARI, MSR, SAVI, TVI, etc.
+
+    * Multi-modal Image Registration.
+
+    * 3D Reconstruction.
+
 ### Permissions
 
 Change permissions to all python files to be executable with the command bellow:
