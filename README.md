@@ -10,6 +10,8 @@ for a detailed analysis of the plant's condition.
 
 [Requirements](#requirements)
 
+[Pipeline](#pipeline)
+
 [Packages Installation](#packages-installation)
 
 [Source Files](#source-files)
@@ -37,6 +39,12 @@ for a detailed analysis of the plant's condition.
 
 * CMS-V GigE Silios Multispectral Camera.
 * Microsoft Kinect V2 Sensor: RGB-D Camera.
+
+## Pipeline
+
+<p align="center">
+    <img src="/data/images/img15.png" width="60%" title="Pipeline" />
+</p>
 
 ## Packages Installation
 
@@ -224,58 +232,58 @@ These experiments include only the imagees of the multispectral camera and the i
 ### Sensors Position
 
 <p align="center">
-    <img src="/data/images/img1.png" width="30%" title="Sensors Position"/>
+    <img src="/data/images/img1.png" width="30%" title="Sensors Position" />
 </p>
 
 ### Captured Image & Bands by the Multispectral Camera and OpenCV UI
 
 <p align="center">
-    <img src="/data/images/img2.png" width="45%" />
-    <img src="/data/images/img3.png" width="45%" />
+    <img src="/data/images/img2.png" width="45%" title="Captured Image" />
+    <img src="/data/images/img3.png" width="45%" title="Captured Bands" />
 </p>
 
 ### Captured RGB Image by the Kinect V2 Sensor, Captured Bands by the Multispectral Camera
 
 <p align="center">
-    <img src="/data/images/img4.png" width="45%" />
-    <img src="/data/images/img5.png" width="45%" />
+    <img src="/data/images/img4.png" width="45%" title="Captured RGB Image" />
+    <img src="/data/images/img5.png" width="45%" title="Captured Bands" />
 </p>
 
 ### NDVI calculation, Colored vegetation, Colored Vegetation After Crosstalk Correction
 
 <p align="center">
-    <img src="/data/images/img6.png" width="32%" />
-    <img src="/data/images/img7.png" width="32%" />
-    <img src="/data/images/img8.png" width="32%" />
+    <img src="/data/images/img6.png" width="32%" title="NDVI" />
+    <img src="/data/images/img7.png" width="32%" title="Colored Vegetation" />
+    <img src="/data/images/img8.png" width="32%" title="Colored Vegetation After Crosstalk Correction" />
 </p>
 
 ### Background Subtraction by using Otsu's method
 
 <p align="center">
-    <img src="/data/images/img9.png" width="45%" />
-    <img src="/data/images/img10.png" width="45%" />
+    <img src="/data/images/img9.png" width="45%" title="Segmentation" />
+    <img src="/data/images/img10.png" width="45%" title="Erosion and Dilation" />
 </p>
 
 ### Image Registration with Feature Matching
 
 <p align="center">
-    <img src="/data/images/img11.png" width="60%" />
+    <img src="/data/images/img11.png" width="60%" title="Image Registration with Feature Matching" />
 </p>
 
 ### Image Registration with Corner Matching
 
 <p align="center">
-    <img src="/data/images/img12.png" width="60%" />
+    <img src="/data/images/img12.png" width="60%" title="Image Registration with Corner Matching" />
 </p>
 
 ### 3D Reconstruction
 
 <p align="center">
-    <img src="/data/images/img13.png" width="60%" />
+    <img src="/data/images/img13.png" width="60%" title="3D Reconstruction 1" />
 </p>
 
 <p align="center">
-    <img src="/data/images/img14.png" width="60%" />
+    <img src="/data/images/img14.png" width="60%" title="3D Reconstruction 2" />
 </p>
 
 ## License
