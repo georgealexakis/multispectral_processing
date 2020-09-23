@@ -287,8 +287,8 @@ These experiments include only the imagees of the multispectral camera and the i
 ### Background Subtraction by using Otsu's method
 
 <p align="center">
-    <img src="/data/images/img9.png" width="45%" title="Segmentation" />
-    <img src="/data/images/img10.png" width="45%" title="Erosion and Dilation" />
+    <img src="/data/images/img9.png" width="40%" title="Segmentation" />
+    <img src="/data/images/img10.png" width="40%" title="Erosion and Dilation" />
 </p>
 
 ### Image Registration with Feature Matching
@@ -300,13 +300,13 @@ These experiments include only the imagees of the multispectral camera and the i
 ### Image Registration with Corner Matching
 
 <p align="center">
-    <img src="/data/images/img12.png" width="60%" title="Image Registration with Corner Matching" />
+    <img src="/data/images/img12.png" width="80%" title="Image Registration with Corner Matching" />
 </p>
 
 ### 3D Reconstruction
 
 <p align="center">
-    <img src="/data/images/img13.png" width="60%" title="3D Reconstruction 1" />
+    <img src="/data/images/img13.png" width="80%" title="3D Reconstruction 1" />
 </p>
 
 <p align="center">
