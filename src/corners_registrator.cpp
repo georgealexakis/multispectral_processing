@@ -36,7 +36,7 @@ private:
     static constexpr const char *IME_B = "mono8";
     static constexpr const char *IME_C = "bgr8";
     static constexpr const char *package = "multispectral_processing";
-    static constexpr const char *file = "/resources/homography1.yaml";
+    static constexpr const char *file = "/resources/homography2.yaml";
     cv::Mat HOMOGRAPHY_MATRIX;
     // Termination criteria for point detection and chessboard pattern size
     cv::TermCriteria criteria = cv::TermCriteria(cv::TermCriteria::EPS + cv::TermCriteria::MAX_ITER, 50, 0.001);
