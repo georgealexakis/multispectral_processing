@@ -97,8 +97,8 @@ Be sure that you have installed the melodic version of the packages below.
 * synchronizer.py: Python node that subscribes to image topics and publishes them after synchronization.
 * calibrator.py: Node that performs calibration.
 * stereo_calibrator.py: Node that performs stereo calibration.
-* tf_nde.cpp: Tranformation node with C++.
-* tf_nde.py: Tranformation node with Python.
+* tf_node.cpp: Tranformation node with C++.
+* tf_node.py: Tranformation node with Python.
 
 ## Launch Files
 
