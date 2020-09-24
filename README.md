@@ -63,7 +63,7 @@ Be sure that you have installed the melodic version of the packages below.
 
 * [libfreenect2](https://github.com/OpenKinect/libfreenect2): Drivers for Kinect V2.
 
-* [image_pipeline](http://wiki.ros.org/image_pipeline): Package that provides functionalities about cloud point, calibration, etc.
+* [image_pipeline](http://wiki.ros.org/image_pipeline): This package is designed to process raw camera images into useful inputs to vision algorithms: rectified mono/color images, stereo disparity images, and stereo point clouds.
 
     ```
     $ cd ~/catkin_ws/src
