@@ -1,4 +1,4 @@
-# Steps for CMS-V1-C-EVR1M-GigE (Ethernet Connection) Camera Setup
+# Steps for CMS-V1-C-EVR1M-GigE Camera Setup
 
 ## Table of Contents
 
@@ -15,6 +15,7 @@
 Brand Name: CMS-V1-C-EVR1M-GigE
 Manifactureer: SILIOS Technologies
 S/N: CMS19110114
+Connection Interface: Gigabyte Ethernet
 
 ### Sensor Specifications
 
