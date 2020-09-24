@@ -37,7 +37,7 @@ for a detailed analysis of the plant's condition.
 
 ### Hardware
 
-* CMS-V GigE Silios Multispectral Camera.
+* [CMS-V GigE Silios](CMS-SETUP.md) Multispectral Camera.
 * Microsoft Kinect V2 Sensor: RGB-D Camera.
 
 ## Pipeline
