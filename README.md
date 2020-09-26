@@ -118,12 +118,11 @@ Be sure that you have installed the melodic version of the packages below.
 ## Resources
 
 * fps_log.yaml: Log file for FPS.
-* parameters.yaml: Manufacturer parameters such as serial number, cross-talk correction coefficients, etc.
+* parameters.yaml: Manufacturer parameters such as serial number, crosstalk correction coefficients, etc.
 * multispectral_camera.yaml: Calibration parameters for multispectral camera.
-* left.yaml: Calibration parameters for stereo vision.
-* right.yaml: Calibration parameters for stereo vision.
 * homography1.yaml: This file contains the perspective transformation matrix between the images for approach 1 (feature detection).
-* homography2.yaml: This file contains the perspective transformation matrix between the images  for approach 2 (corenr detection).
+* homography2.yaml: This file contains the perspective transformation matrix between the images for approach 2 (corner detection).
+* wr_coefficients: White reference coefficients file.
 * data folder: This folder contains multiple images for experiments, etc.
 
 ## Execution
