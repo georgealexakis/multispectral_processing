@@ -89,6 +89,7 @@ Be sure that you have installed the melodic version of the packages below.
 * backup.cpp: C++ node for saving single frames or stream of frames. 
 * backup.py: Python node for saving single frames or stream of frames.
 * experiments.cpp: This node publishes images when to the topic that band_separator node subscribes. It can be used when no camera is available.
+* offline_registration.cpp: Node for publishint the iamgem topics for a simulation of offline image registration.
 * features_registraor.cpp: C++ node that detects features from 2 images and align them.
 * features_registraor.py: Python node that detects features from 2 images and align them.
 * corners_registraor.cpp: C++ node that detects features from 2 images and align them.
@@ -248,7 +249,11 @@ These experiments include only the imagees of the multispectral camera and the i
     ```
 2. Uncomment the include of [experiments.cpp](/src/experiments.cpp) node.
 
-    `<node name="experiments" pkg="multispectral_processing" type="experiments" args="7" output="screen"/>`
+    `<node name="experiments" pkg="multispectral_processing" type="experiments" args="2 2020511" output="screen"/>`
+
+    where
+
+    `args=<folder id> <prefix of images>` 
 
 3. Choose the dataset that you want by changing the "args" value.
 4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launch](/launch/cms_py.launch) file.
