@@ -213,6 +213,10 @@ add_executable(experiments src/experiments.cpp)
 target_link_libraries(experiments ${catkin_LIBRARIES})
 target_link_libraries(experiments ${OpenCV_LIBRARIES})
 
+add_executable(offline_registration src/offline_registration.cpp)
+target_link_libraries(offline_registration ${catkin_LIBRARIES})
+target_link_libraries(offline_registration ${OpenCV_LIBRARIES})
+
 add_executable(synchronizer src/synchronizer.cpp)
 target_link_libraries(synchronizer ${catkin_LIBRARIES})
 target_link_libraries(synchronizer ${OpenCV_LIBRARIES})

@@ -8,5 +8,5 @@
   <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure"/>
   <node name="band_separator" pkg="multispectral_processing" type="band_separator.py" args="debug" output="screen"/>
   <node name="camera_configurator" pkg="multispectral_processing" type="camera_configurator.py" output="screen"/>
-  <!-- <node name="experiments" pkg="multispectral_processing" type="experiments" args="7" output="screen"/> -->
+  <!-- <node name="experiments" pkg="multispectral_processing" type="experiments" args="5 2020511" output="screen"/> -->
 </launch>

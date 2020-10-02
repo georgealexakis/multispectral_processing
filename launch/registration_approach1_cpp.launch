@@ -9,4 +9,5 @@
   <node name="features_registrator" pkg="multispectral_processing" type="features_registrator" args="nocapture" output="screen"/>
   <node name="tf_node" pkg="multispectral_processing" type="tf_node"/>
   <node name="static_transform_publisher" pkg="tf" type="static_transform_publisher" args="0 0 0 -1.5707963267948966 0 -1.5707963267948966 camera_link kinect2_link 100"/>
+  <!-- <node name="offline_registration" pkg="multispectral_processing" type="offline_registration" args="1 2020511" output="screen"/> -->
 </launch>
