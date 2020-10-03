@@ -239,6 +239,8 @@ For mapping by using rtabmap_ros package:
 
 ## Demo Experiments
 
+### General
+
 These experiments include only the imagees of the multispectral camera and the included processes. Run experiments with the already captured images located in [/data/simulation](/data/simulation) folder and follow the steps below:
 
 1. Comment the includes below in [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launch](/launch/cms_py.launch) file.
@@ -257,6 +259,37 @@ These experiments include only the imagees of the multispectral camera and the i
 
 3. Choose the dataset that you want by changing the "args" value.
 4. Run [cms_cpp.launch](/launch/cms_cpp.launch) or [cms_py.launch](/launch/cms_py.launch) file.
+
+### Offline Image Registration
+
+Perform offline image registration with all approaches. Run experiments with the already captured images located in [/data/simulation](/data/simulation) folder and follow the steps below:
+
+1. Comment the includes below in the selected .launch file of the examined approach as presented below:
+    ```
+    <!-- <include file="$(find multispectral_processing)/launch/kinect2_bridge.launch"/> -->
+    <!-- <include file="$(find multispectral_processing)/launch/ueye_camera_gige.launch"/> -->
+    <!-- <node name="band_separator" pkg="multispectral_processing" type="band_separator" args="nodebug" output="screen"/> -->
+    <!-- <node name="tf_node" pkg="multispectral_processing" type="tf_node"/> -->
+    <!-- <node name="static_transform_publisher" pkg="tf" type="static_transform_publisher" args="0 0 0 -1.5707963267948966 0 -1.5707963267948966 camera_link kinect2_link 100"/> -->
+    ```
+2. Uncomment the include of [offline_registration.cpp](/src/offline_registration.cpp) node.
+
+    `<node name="offline_registration" pkg="multispectral_processing" type="offline_registration" args="1 2020511" output="screen"/>`
+
+    where
+
+    `args=<folder id> <prefix of images>`
+
+3. Choose the dataset that you want by changing the "args" value.
+4. Run the launch file of the image registration approach.
+5. Visualize results by using `$ rviz` with `Fixed Frame="multispecral_frame"` and use the published topics:
+    * /multispectral/image_color: Registered Kinect RGB image.
+    * /multispectral/image_mono: Registered multispectral image.
+    * /multispectral/image_depth: Registered depth image.
+
+    or use
+
+    `$ rqt_image_view`
 
 ## Figures
 
