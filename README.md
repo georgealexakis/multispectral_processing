@@ -302,7 +302,7 @@ Perform offline image registration with all approaches. Run experiments with the
 ### Robotnik Summit Equipped with the Sensors in Vineyard
 
 <p align="center">
-    <img src="/data/images/img18.jpg" width="60%" title="Robotnik Summit" />
+    <img src="/data/images/img18.JPG" width="60%" title="Robotnik Summit" />
 </p>
 
 ### Multispectral Image Pixels
