@@ -299,6 +299,18 @@ Perform offline image registration with all approaches. Run experiments with the
     <img src="/data/images/img1.png" width="30%" title="Sensors Position" />
 </p>
 
+### Robotnik Summit Equipped with the Sensors in Vineyard
+
+<p align="center">
+    <img src="/data/images/img18.png" width="40%" title="Robotnik Summit" />
+</p>
+
+### Multispectral Image Pixels
+
+<p align="center">
+    <img src="/data/images/img17.png" width="40%" title="Multispectral Image Pixels" />
+</p>
+
 ### Captured Image & Bands by the Multispectral Camera and OpenCV UI
 
 <p align="center">
